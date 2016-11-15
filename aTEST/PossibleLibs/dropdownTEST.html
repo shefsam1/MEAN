@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+
+    <link rel="stylesheet" href="\SeeIt\aTEST\Skeleton-2.0.4\css\skeleton.css">
+
+<script type="text/javascript">
+
+/*
+Triple Combo Script Credit
+By Philip M: http://www.codingforums.com/member.php?u=186
+Visit http://javascriptkit.com for this and over 400+ other scripts
+*/
+
+var categories = [];
+categories["startList"] = ["Wearing Apparel","Books"]
+categories["Wearing Apparel"] = ["Men","Women","Children"];
+categories["Books"] = ["Biography","Fiction","Nonfiction"];
+categories["Men"] = ["Shirts","Ties","Belts","Hats"];
+categories["Women"] = ["Blouses","Skirts","Scarves", "Hats"];
+categories["Children"] = ["Shorts", "Socks", "Coats", "Nightwear"];
+categories["Biography"] = ["Contemporay","Historical","Other"];
+categories["Fiction"] = ["Science Fiction","Romance", "Thrillers", "Crime"];
+categories["Nonfiction"] = ["How-To","Travel","Cookbooks", "Old Churches"];
+
+var nLists = 3; // number of select lists in the set
+
+function fillSelect(currCat,currList){
+var step = Number(currList.name.replace(/\D/g,""));
+for (i=step; i<nLists+1; i++) {
+document.forms['tripleplay']['List'+i].length = 1;
+document.forms['tripleplay']['List'+i].selectedIndex = 0;
+}
+var nCat = categories[currCat];
+for (each in nCat) {
+var nOption = document.createElement('option'); 
+var nData = document.createTextNode(nCat[each]); 
+nOption.setAttribute('value',nCat[each]); 
+nOption.appendChild(nData); 
+currList.appendChild(nOption); 
+} 
+}
+
+function getValue(L3, L2, L1) {
+alert("Your selection was:- \n" + L1 + "\n" + L2 + "\n" + L3);
+}
+
+function init() {
+fillSelect('startList',document.forms['tripleplay']['List1'])
+}
+
+navigator.appName == "Microsoft Internet Explorer" ? attachEvent('onload', init, false) : addEventListener('load', init, false);	
+
+</script> 
+
+    <script src="script.js"></script>
+
+
+  </head>
+  <body>
+    <!-- page content -->
+
+<form name="tripleplay" action="">
+<select name='List1' onchange="fillSelect(this.value,this.form['List2'])">
+<option selected>Make a selection</option>
+</select>
+&nbsp;
+<select name='List2' onchange="fillSelect(this.value,this.form['List3'])">
+<option selected>Make a selection</option>
+</select>
+&nbsp;
+<select name='List3' onchange="getValue(this.value, this.form['List2'].value, 
+this.form['List1'].value)">
+<option selected >Make a selection</option>
+</select>
+</form>
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+  L.C. Smith #5 typewriter font. 
+
+  This truetype typewriter font stems from an 
+  L.C. Smith n°5 typewriter of 1913 (serial number 197325-5)
+
+  and was produced with the programme available at
+  http://www.yourfonts.com.
+
+  You may use and distribute this font freely, but for
+  non commerical purposes only. Please see to include
+  this info.txt when distributing, or credit me.
+
+***** BEST USE *******
+
+  To get a close result of the authentic typewriter font as it appears on paper,
+  set the font size on "10" and the character spacing to "+1 point".
+
+***** BESTE EINSTELLUNG *******
+  
+  Um die Schrift so hinzubringen wie sie auf Papier getippt erscheint,
+  stellen Sie die Schriftgröße auf "10" und den Zeichenabstand (auch Laufweite genannt)
+  auf "+1 Punkt".
+
+  read more on http://typewriters.ch
+
+  (c) Georg Sommeregger 2010
+  
+ 
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
